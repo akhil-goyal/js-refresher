@@ -15,7 +15,7 @@ The **Memory Heap** is a large region in memory where JavaScript stores variable
 ```js
 const number = 610;  
 const string = "Some text";  
-const human = { firstName: "Andre", lastName: "Nagwa" };  
+const human = { firstName: "Jack", lastName: "Sparrow" };  
 ```
 - The number `610` and string `"Some text"` are stored in memory.  
 - The `human` object is allocated memory, and its properties (`firstName` and `lastName`) are stored as well.  
