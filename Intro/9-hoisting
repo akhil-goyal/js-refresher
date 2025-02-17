@@ -1,0 +1,18 @@
+# Hoisting in JavaScript  
+
+Hoisting in JavaScript refers to the process where variable and function declarations are moved to the top of their respective scopes during the **creation phase** of execution. This happens before the actual code runs.
+
+## Variable Hoisting  
+- Variables declared with `var` are hoisted but initialized as `undefined`.  
+- Variables declared with `let` or `const` are not hoisted in the same way and cause a `ReferenceError` if accessed before declaration.
+
+## Function Hoisting  
+- Function **declarations** are fully hoisted, meaning they can be called before they are defined in the code.  
+- Function **expressions** (functions assigned to variables) are only hoisted as variables, so they remain `undefined` until the execution phase.
+
+## Key Insights  
+- The JavaScript engine **does not physically move** declarations but reserves memory space for them.  
+- Only `var` and function declarations are hoisted. `let` and `const` remain in the **temporal dead zone** until execution reaches them.  
+- Trying to use a hoisted `var` variable before its assignment results in `undefined`, whereas using a `let` or `const` before assignment results in an error.  
+
+Understanding hoisting helps in writing better-structured JavaScript code and avoiding unexpected errors.
